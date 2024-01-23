@@ -1,13 +1,14 @@
-import { AppBar, Autocomplete, Box, Tab, Tabs, TextField, Toolbar } from '@mui/material'
+import { AppBar, Autocomplete, Box, Tab,TextField, Toolbar } from '@mui/material'
 import MovieFilterIcon from '@mui/icons-material/MovieFilter';
-import React, { useState } from 'react'
+
+import { Link } from 'react-router-dom';
 
 
 const dummyArray=['Aadujeevitham', 'Malaikotte Valibhan', ' K G F 3']
 
 const Header = () => {
 
-  const [value,setValue]= useState(0)
+
 
   return (
   
@@ -29,13 +30,13 @@ const Header = () => {
 
     </Box>
 <Box display={'flex'}>
-<Tabs textColor='white' indicatorColor='secondary' value={value} onChange={(e,val)=>setValue(val)} >
 
 
-<Tab label="Movies"/>
-<Tab label="Login"/>
-<Tab label="Signup"/>
-</Tabs>
+<Link style={{textDecoration:'none',color:'white'}} to={'/movie'}><Tab label="Movies"/></Link>
+<Link style={{textDecoration:'none',color:'white'}} to={'/login'}><Tab label="Login"/></Link>
+<Link style={{textDecoration:'none',color:'white'}} to={'/signup'}><Tab label="Signup"/></Link>
+
+
 
 </Box>
 
