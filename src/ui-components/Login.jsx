@@ -1,13 +1,20 @@
-import { Box, Button, Grid, TextField, Typography } from '@mui/material';
-import React from 'react'
+import { Avatar, Box, Button, Grid, Paper, TextField, Typography } from '@mui/material';
+import React, { useState } from 'react'
 
 const Login = () => {
+  const [error, setError] = useState('');
+  const paperStyle = { padding: 20, width: '100%', maxWidth: 400, margin: '20px auto' };
+  const avatarStyle = { backgroundColor: '#005A92' };
+  const buttonStyle = { margin: '15px 0', backgroundColor: "#005A98", color: 'white' };
   return (
-    <div style={{ margin: "10% 35%", textAlign: "center" }}>
+    <div >
 
 
-<Grid container spacing={2}>
-  <Grid item xs={12} md={12}>
+<br /><br /><br /><br /><br /><br />
+
+
+
+  <Grid item xs={12} md={12} lg={12}>
   <Box boxShadow={ 3} padding={"20px 60px"} width={'500px'} height={'400px'} borderRadius={'5px'}>
 
 <Typography variant="h3" style={{ color: "Black" }}>
@@ -38,9 +45,9 @@ const Login = () => {
       />
       <br />
       <br />
-      <Button sx={{padding:'10px 0'}}
+      <Button  sx={{padding:'10px 0', background:'green' }}
         variant="contained"
-        color="primary"
+       
         fullWidth
         // onClick={submitForm}
       >
@@ -53,7 +60,7 @@ const Login = () => {
 </Box>
   </Grid>
 
-</Grid>
+
 
 
 

@@ -11,7 +11,7 @@ const Header = () => {
 
 
   return (
-  
+  <div>
     <AppBar sx={{bgcolor:'#2d2b42'}}>
 <Toolbar>
 
@@ -44,6 +44,8 @@ const Header = () => {
 
 
     </AppBar>
+
+    </div>
   )
 }
 
