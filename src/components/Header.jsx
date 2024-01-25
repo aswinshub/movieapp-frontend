@@ -1,14 +1,25 @@
-import { AppBar, Autocomplete, Box, Tab,TextField, Toolbar } from '@mui/material'
+import { AppBar, Autocomplete, Box, Dialog, Tab,TextField, Toolbar } from '@mui/material'
 import MovieFilterIcon from '@mui/icons-material/MovieFilter';
 
 import { Link } from 'react-router-dom';
+import Login from '../ui-components/Login';
+import React from 'react';
+
 
 
 const dummyArray=['Aadujeevitham', 'Malaikotte Valibhan', ' K G F 3']
 
 const Header = () => {
 
+  const [open, setOpen] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
   <div>
@@ -32,8 +43,28 @@ const Header = () => {
 <Box display={'flex'}>
 
 
-<Link style={{textDecoration:'none',color:'white'}} to={'/movie'}><Tab label="Movies"/></Link>
-<Link style={{textDecoration:'none',color:'white'}} to={'/login'}><Tab label="Login"/></Link>
+<Link   style={{textDecoration:'none',color:'white'}} to={'/movie'}><Tab label="Movies"/></Link>
+
+<React.Fragment>
+  
+
+<Link   onClick={handleClickOpen} style={{textDecoration:'none',color:'white'}} to={'/login'}><Tab label="Login"/></Link>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+       
+
+<Login/>
+
+      </Dialog>
+    </React.Fragment>
+    
+
+
+
 <Link style={{textDecoration:'none',color:'white'}} to={'/signup'}><Tab label="Signup"/></Link>
 
 

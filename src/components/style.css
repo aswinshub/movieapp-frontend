@@ -146,11 +146,11 @@ line-height: 35px;
   padding: 5px;
 }
 
-h4,
-h2 {
+
+h1{
   text-align: center;
   font-family: "Poppins", sans-serif;
-  color: #003c4e;
+  color: #2c004e;
 
 }
 
@@ -178,3 +178,25 @@ h2 {
   
 
 }
+button .btn-book{
+  
+  background-color: rgb(166, 0, 0);
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px 50px;
+ 
+  margin: 10px;
+  cursor: pointer;
+  font-family: "Poppins";
+  transition: .5s;
+}
+
+button .btn-book:hover{
+
+  background-color: rgb(0, 155, 78); 
+
+
+
+}
+

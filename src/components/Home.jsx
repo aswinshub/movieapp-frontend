@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Rating, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
 import bannerImage from "./banner.png";
-import { Link } from "react-router-dom";
+
 
 const Home = () => {
 
@@ -38,7 +38,9 @@ const Home = () => {
         </section>
       </main>
 
+<h1>Movies</h1>
 
+ <Divider/>
 
       <Grid container spacing={2} alignItems={"center"} textAlign={'center'} sx={{ marginTop:'20px', marginBottom:'20px', paddingLeft:'6em'}}>
   <Grid item xs={4}>
@@ -67,6 +69,9 @@ const Home = () => {
           Category : U/A <br />
           Language : Malayalam <br />
           </Typography>
+
+
+          <button className="btn-book"> Book Tickets</button>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -85,3 +90,4 @@ const Home = () => {
 };
 
 export default Home;
+
