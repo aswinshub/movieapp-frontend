@@ -15,7 +15,7 @@ function App() {
       <Routes>
     
         <Route
-          path="/movie"
+          path="/"
           element={
         
               <Home child={<Home />} />

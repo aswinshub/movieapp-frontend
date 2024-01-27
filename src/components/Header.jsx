@@ -43,7 +43,7 @@ const Header = () => {
 <Box display={'flex'}>
 
 
-<Link   style={{textDecoration:'none',color:'white'}} to={'/movie'}><Tab label="Movies"/></Link>
+<Link   style={{textDecoration:'none',color:'white'}} to={'/'}><Tab label="Movies"/></Link>
 
 <React.Fragment>
   
