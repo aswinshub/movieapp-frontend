@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 
 import Signup from "./ui-components/Signup";
+
 function App() {
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
           path="/"
           element={
         
-              <Home child={<Home />} />
+              <Home />
            
           }
         />
@@ -27,10 +28,11 @@ function App() {
           path="/signup"
           element={
 
-              <Signup child={<Signup />} />
+              <Signup  />
            
           }
         />
+   
 
        
       </Routes>

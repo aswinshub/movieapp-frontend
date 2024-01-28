@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mbutton{
+
+  border-radius: 5px;
+  background-color: rgb(39, 23, 75);
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px 50px;
+ 
+  margin: 10px;
+  cursor: pointer;
+  font-family: "Poppins";
+  transition: .5s;
+}
+
+.mbutton:hover{
+
+  
+  background-color: rgb(62, 29, 137);
+
+}

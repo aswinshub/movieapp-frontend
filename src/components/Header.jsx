@@ -1,6 +1,7 @@
 import { AppBar, Autocomplete, Box, Dialog, Tab,TextField, Toolbar } from '@mui/material'
 import MovieFilterIcon from '@mui/icons-material/MovieFilter';
 
+
 import { Link } from 'react-router-dom';
 import Login from '../ui-components/Login';
 import React from 'react';
@@ -44,6 +45,7 @@ const Header = () => {
 
 
 <Link   style={{textDecoration:'none',color:'white'}} to={'/'}><Tab label="Movies"/></Link>
+<Link style={{textDecoration:'none',color:'white'}} to={'/signup'}><Tab label="Signup"/></Link> 
 
 <React.Fragment>
   
@@ -65,7 +67,13 @@ const Header = () => {
 
 
 
-<Link style={{textDecoration:'none',color:'white'}} to={'/signup'}><Tab label="Signup"/></Link>
+
+
+
+
+
+
+
 
 
 

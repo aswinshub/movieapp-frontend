@@ -147,10 +147,11 @@ line-height: 35px;
 }
 
 
-h1{
+h2{
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #2c004e;
+  font-size: 30px;
 
 }
 

@@ -6,7 +6,7 @@ const Signup = () => {
   return (
     <div>
  <Grid sx={{justifyContent:"center",display:'flex' , marginTop:"8em"}} item xs={12} md={12} lg={12} >
-  <Box boxShadow={ 3} padding={"20px 60px"} width={'600px'} height={'auto'} borderRadius={'5px'}>
+  <Box boxShadow={ 3} padding={"20px 60px"} width={'500px'} height={'auto'} borderRadius={'5px'}>
 
 <Typography variant="h3" style={{ color: "Black" , textAlign:'center' }}>
         Sign Up
@@ -59,7 +59,7 @@ const Signup = () => {
       <br />
       <br />
       
-      <Button  sx={{padding:'10px 0', background:'green' }}
+      <Button className='mbutton' sx={{padding:'10px 0', background:'green' }}
         variant="contained"
        
         fullWidth
