@@ -4,6 +4,7 @@ import "./style.css";
 import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
 import bannerImage from "./banner.png";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
   const [value, setValue] = React.useState(2);
   return (
     <div>
+      <Header/>
       <main>
         <section className="banner-container">
           <div className="container">

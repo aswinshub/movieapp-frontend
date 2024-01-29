@@ -1,5 +1,6 @@
 import {  Box, Button, Grid,Tab,TextField, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 
 const Login = () => {
@@ -8,10 +9,10 @@ const Login = () => {
     <div >
 
 
+<Header/>
 
 
-
-  <Grid item xs={12} md={12} lg={12} >
+  <Grid item sx={{justifyContent:"center",display:'flex' , marginTop:"8em"}} xs={12} md={12} lg={12} >
   <Box boxShadow={ 3} padding={"20px 60px"} width={'500px'} height={'400px'} borderRadius={'5px'}>
 
 <Typography variant="h3" style={{ color: "Black",textAlign:'center' }}>

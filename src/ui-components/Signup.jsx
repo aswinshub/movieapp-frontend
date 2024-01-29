@@ -1,10 +1,12 @@
 import React from 'react'
 import {  Box, Button, Grid,TextField, Typography } from '@mui/material';
+import Header from '../components/Header';
 
 
 const Signup = () => {
   return (
     <div>
+      <Header/>
  <Grid sx={{justifyContent:"center",display:'flex' , marginTop:"8em"}} item xs={12} md={12} lg={12} >
   <Box boxShadow={ 3} padding={"20px 60px"} width={'500px'} height={'auto'} borderRadius={'5px'}>
 
@@ -65,7 +67,7 @@ const Signup = () => {
         fullWidth
         // onClick={submitForm}
       >
-        Login
+        Signup
       </Button>
       <br />
       <br />

@@ -8,7 +8,7 @@ import React from 'react';
 
 
 
-const dummyArray=['Aadujeevitham', 'Malaikotte Valibhan', ' K G F 3']
+const dummyArray=['Aadujeevitham', 'Malaikotte Valibhan', ' Captain Miller']
 
 const Header = () => {
 
@@ -47,22 +47,13 @@ const Header = () => {
 <Link   style={{textDecoration:'none',color:'white'}} to={'/'}><Tab label="Movies"/></Link>
 <Link style={{textDecoration:'none',color:'white'}} to={'/signup'}><Tab label="Signup"/></Link> 
 
-<React.Fragment>
-  
+
 
 <Link   onClick={handleClickOpen} style={{textDecoration:'none',color:'white'}} to={'/login'}><Tab label="Login"/></Link>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
+     
        
 
-<Login/>
 
-      </Dialog>
-    </React.Fragment>
     
 
 
