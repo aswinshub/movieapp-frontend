@@ -1,24 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import "./style.css";
-import { Box, Card, CardActionArea, CardContent, CardMedia, Dialog, Divider, Grid, Rating, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
 import bannerImage from "./banner.png";
 import { Link } from "react-router-dom";
-import Login from "../ui-components/Login";
 
 
 const Home = () => {
 
 
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
@@ -46,23 +36,9 @@ const Home = () => {
                   </h1>
                   <br />
 
-              
-                  <React.Fragment>
-  
+                  <button>   <Link style={{textDecoration:'none'}} to={'/login'}>Login</Link> 
 
-  <Link   onClick={handleClickOpen} style={{textDecoration:'none',color:'white'}} to={'/login'}>    <button> Login</button></Link>
-        <Dialog
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="alert-dialog-title"
-          aria-describedby="alert-dialog-description"
-        >
-         
-  
-  <Login/>
-  
-        </Dialog>
-      </React.Fragment>
+</button>
 
 
                   
@@ -125,7 +101,7 @@ const Home = () => {
     </Card>
 <br />
   
-      <Rating name="read-only" value={value} readOnly />
+      {/* <Rating name="read-only" value={value} readOnly /> */}
      
     </Box>
   </Box>

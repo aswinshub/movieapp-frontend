@@ -48,7 +48,7 @@ const Login = () => {
         fullWidth
         // onClick={submitForm}
       >
-        Login
+     <Link style={{textDecoration:'none'}} to={'/user'}>Login</Link> 
       </Button>
 
 
