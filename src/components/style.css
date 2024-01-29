@@ -201,5 +201,9 @@ button .btn-book:hover{
 
 }
 
+.usericon{
 
+  margin-top: 12px;
+  cursor: pointer;
+}
 

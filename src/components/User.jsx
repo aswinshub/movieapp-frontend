@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from 'react'
 import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
-import EditIcon from '@mui/icons-material/Edit';
-import axios from 'axios';
-import DeleteIcon from '@mui/icons-material/Delete';
 
-import Headeradm from "./Headeradm";
+import axios from 'axios';
+
+
+import Headeruser from './Headeruser';
 
 const User = () => {
   const [data, setData] = useState([]);
@@ -23,7 +23,7 @@ const User = () => {
     <div>
       
 
-      <Headeradm/>
+      <Headeruser/>
 <br /><br /><br /><br /><br /> 
 
 <h2 >User Dashboard</h2>
@@ -63,7 +63,7 @@ const User = () => {
 
 
           <button className="mbutton"> Book Tickets</button><br />
-          <button className="editbtn"> <EditIcon/></button> &nbsp; &nbsp;<button className="deletebtn"><DeleteIcon/></button>
+          
 
         </CardContent>
       </CardActionArea>
@@ -74,7 +74,7 @@ const User = () => {
      
     </Box>
   </Box>
-  <br /><br /><br /> <br /><br /><br /><br />
+  <br /><br /><br /> 
   </Grid>
 
  

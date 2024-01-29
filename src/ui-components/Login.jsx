@@ -43,14 +43,14 @@ const Login = () => {
       />
       <br />
       <br />
-      <Button className='mbutton'  sx={{padding:'10px 0', background:'green' }}
+     
+     <Link style={{textDecoration:'none'}} to={'/user'}> <Button className='mbutton'  sx={{padding:'10px 0', background:'green' }}
         variant="contained"
        
         fullWidth
         // onClick={submitForm}
-      >
-     <Link style={{textDecoration:'none'}} to={'/user'}>Login</Link> 
-      </Button>
+      >Login  </Button></Link> 
+    
 
 
 

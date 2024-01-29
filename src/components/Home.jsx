@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import "./style.css";
-import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Tab, Typography } from "@mui/material";
 import bannerImage from "./banner.png";
 import { Link } from "react-router-dom";
 import Header from "./Header";
@@ -97,7 +97,7 @@ const Home = () => {
           </Typography>
 
 
-          <button className="mbutton"> Book Tickets</button>
+          <Link  to={'/login'}>  <button className="mbutton"> Book Tickets</button></Link>
         </CardContent>
       </CardActionArea>
     </Card>

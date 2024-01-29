@@ -58,7 +58,7 @@ const Admin = () => {
           </Typography>
 
 
-          <button className="mbutton"> Book Tickets</button><br />
+          
           <button className="editbtn"> <EditIcon/></button> &nbsp; &nbsp;<button className="deletebtn"><DeleteIcon/></button>
 
         </CardContent>
