@@ -5,6 +5,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
 import Headeradm from "./Headeradm";
+import Header from "./Header";
 const Admin = () => {
 
   const [data, setData] = useState([]);
@@ -19,7 +20,7 @@ const Admin = () => {
 
   return (
     <div>
-<Headeradm/>
+     <Headeradm />
 <br /><br /><br /><br /><br /> 
 
 <h2 >Admin Dashboard</h2>

@@ -6,7 +6,8 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Ratin
 import axios from 'axios';
 
 
-import Headeruser from './Headeruser';
+
+import Header from './Header';
 
 const User = () => {
   const [data, setData] = useState([]);
@@ -23,7 +24,8 @@ const User = () => {
     <div>
       
 
-      <Headeruser/>
+
+      <Header userType="user" />
 <br /><br /><br /><br /><br /> 
 
 <h2 >User Dashboard</h2>

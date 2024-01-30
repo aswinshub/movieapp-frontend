@@ -75,3 +75,23 @@ button .deletebtn:hover{
   background-color: rgba(253, 55, 55, 0.979);
 
 }
+ .credbtn{
+
+  border-radius: 5px;
+  background-color: rgb(39, 23, 75);
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px 50px;
+ width: 100%;
+
+  cursor: pointer;
+  font-family: "Poppins";
+  transition: .5s;
+}
+.credbtn:hover{
+
+  
+  background-color: rgb(62, 29, 137);
+
+}
