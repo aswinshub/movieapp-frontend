@@ -47,30 +47,40 @@ const Login = () => {
     setErrors(newErrors);
     return isValid;
   };
-
   const handleLogin = async () => {
     if (validateForm()) {
       try {
+        const { email, password } = credentials;
+  
+  
+        if (email === 'admin@gmail.com' && password === 'Admin123') {
+        
+          localStorage.setItem('token', 'adminToken'); 
+          console.log('Admin login successful');
+          alert('Admin login successful');
+          navigate('/admin'); 
+          return;
+        }
+  
         const response = await axios.post('http://localhost:4004/user/login', credentials);
         const { message, token } = response.data;
-
-        if (message === 'success') {
-         
-          localStorage.setItem('token', token);
-          console.log('Login successful');
-          alert('Login successful')
-          navigate('/user');
   
+        if (message === 'success') {
+          localStorage.setItem('token', token);
+          console.log('User login successful');
+          alert('User login successful');
+          navigate('/user');
         } else {
           console.error('Login failed:');
-          alert(response.data.message)
+          alert('Login failed');
         }
       } catch (error) {
         console.error('Error during login:', error.message);
+        alert('Invalid Credentials');
       }
     }
   };
-
+  
   return (
     <div>
       <Header />

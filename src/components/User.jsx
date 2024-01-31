@@ -8,6 +8,7 @@ import axios from 'axios';
 
 
 import Header from './Header';
+import Headeruser from './Headeruser';
 
 const User = () => {
   const [data, setData] = useState([]);
@@ -25,7 +26,7 @@ const User = () => {
       
 
 
-      <Header userType="user" />
+      <Headeruser/>
 <br /><br /><br /><br /><br /> 
 
 <h2 >User Dashboard</h2>
@@ -41,8 +42,8 @@ const User = () => {
 
   <Box
       sx={{
-        '& > legend': { mt: 2 },
-      }}
+        '& > legend': { mt:2} , 
+      }} 
     >
   
   <Card sx={{ maxWidth: 345 }}>
