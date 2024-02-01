@@ -84,6 +84,8 @@ button .deletebtn:hover{
   font-size: 15px;
   padding: 10px 50px;
  width: 100%;
+ align-items: center;
+ justify-content: center;
 
   cursor: pointer;
   font-family: "Poppins";

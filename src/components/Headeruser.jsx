@@ -22,6 +22,8 @@ const Headeruser = () => {
     </Box>
 <Box display={'flex'}>
 
+
+<Link style={{textDecoration:'none',color:'white'}} to={''}><Tab label="Booking History"/></Link>
 <Link style={{textDecoration:'none',color:'white'}} to={'/'}><Tab label="Logout"/></Link>
 <PersonIcon className='usericon'/>
 

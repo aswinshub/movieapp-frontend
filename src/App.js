@@ -8,6 +8,7 @@ import Admin from "./components/Admin";
 
 import Login from "./ui-components/Login";
 import User from "./components/User";
+import Moviepage from "./components/Moviepage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<User />} />
+        <Route path="/page" element={<Moviepage />} />
       </Routes>
     </>
   );

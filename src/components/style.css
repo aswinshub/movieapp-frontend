@@ -207,3 +207,28 @@ button .btn-book:hover{
   cursor: pointer;
 }
 
+.movie-d{
+
+  width: 100%;
+  height: 100%;
+  padding-left: 6em;
+  
+}
+
+.discrip{
+
+padding: 5px;
+transition: .3s;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+.discrip:hover{
+
+  
+  transform: rotate(3deg);
+
+}
