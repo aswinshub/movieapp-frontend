@@ -80,12 +80,18 @@ const Home = () => {
   
   <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
+
+
+      <Link to={`/movie/${val.id}`}>
+      <CardMedia
           component="img"
           height="300"
           image={val.imgurl}
         
         />
+</Link>
+
+ 
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
           {val.moviename} <br />
