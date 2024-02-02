@@ -21,7 +21,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<User />} />
-        <Route path="/page" element={<Moviepage />} />
+    
 
         <Route path="/movie/:id" component={Moviepage} />
 
