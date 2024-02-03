@@ -5,15 +5,15 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Paper, Table, 
 import { Link, useParams } from 'react-router-dom';
 
 const Moviepage = () => {
-  const { id } = useParams();
+  const { _id } = useParams();
   const [movieData, setMovieData] = useState({});
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4004/movie/${id}`)
+      .get(`http://localhost:4004/movie/${_id}`)
       .then((res) => setMovieData(res.data))
       .catch((err) => console.log(err));
-  }, [id]);
+  }, [_id]);
 
   return (
     <div>

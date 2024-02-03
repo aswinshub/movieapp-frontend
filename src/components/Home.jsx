@@ -82,7 +82,7 @@ const Home = () => {
       <CardActionArea>
 
 
-      <Link to={`/movie/${val.id}`}>
+      <Link to={`/${val._id}`}>
       <CardMedia
           component="img"
           height="300"
