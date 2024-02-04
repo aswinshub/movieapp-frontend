@@ -24,6 +24,7 @@ const Headeradm = () => {
 
     </Box>
 <Box display={'flex'}>
+<Link style={{textDecoration:'none',color:'white'}} to={'/admin'}><Tab label="Admin"/></Link>
 
 <Link style={{textDecoration:'none',color:'white'}} to={''}><Tab label="Booking Status"/></Link>
 

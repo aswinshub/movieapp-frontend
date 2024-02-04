@@ -21,9 +21,9 @@ const Moviepage = () => {
       <div className='movie-d'>
         <br /><br /><br /><br /><br />
         <h2 className='dishead'>{movieData.moviename}</h2>
-        <Grid container spacing={2} sx={{ paddingleft: '10em' }}>
-          <Grid item xs={6} sx={{ marginTop: '2em', paddingleft: '10em' }}>
-            <TableContainer component={Paper}>
+        <Grid container spacing={2} sx={{ paddingleft: '10em', paddingRight:'5em' }}>
+          <Grid item xs={12} md={6} lg={6} sx={{ marginTop: '2em', paddingleft: '10em' }}>
+            <TableContainer sx={{paddingRight:'10px'}} component={Paper}>
               <Table sx={{ minWidth: 400 }} aria-label="simple table">
                 <TableBody>
                   <TableRow
@@ -38,9 +38,9 @@ const Moviepage = () => {
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
-                      Description
+                      Discription
                     </TableCell>
-                    <TableCell align="right">{movieData.description}</TableCell>
+                    <TableCell align="right">{movieData.discription}</TableCell>
                   </TableRow>
                   <TableRow
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -62,7 +62,7 @@ const Moviepage = () => {
               </Table>
             </TableContainer>
           </Grid>
-          <Grid item xs={6} sx={{ marginTop: '2em' }}>
+          <Grid item  xs={12} md={6} lg={6} sx={{ marginTop: '2em' }}>
             <Box padding={"20px 60px"} width={'100%'} height={'500px'} borderRadius={'5px'}>
               <Box className="discrip"
                 sx={{

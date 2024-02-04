@@ -1,11 +1,12 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, Rating, Typography } from "@mui/material";
 import React, { useEffect, useState } from 'react'
 import EditIcon from '@mui/icons-material/Edit';
-
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
 import Headeradm from "./Headeradm";
-import Header from "./Header";
+import addimage from './add.jpg'
+import { Link } from "react-router-dom";
 const Admin = () => {
 
   const [data, setData] = useState([]);
@@ -27,7 +28,48 @@ const Admin = () => {
 
  <Divider/>
 
-      <Grid container spacing={2} alignItems={"center"} textAlign={'center'} sx={{ marginTop:'20px', marginBottom:'20px', paddingLeft:'6em'}}>
+      <Grid container spacing={2} sx={{ marginTop:'20px', marginBottom:'20px', paddingLeft:'6em'}}>
+
+
+
+      <Grid item xs={12} md={6} lg={4} >
+  <Box padding={"100px 100px"} borderRadius={'5px'} >
+
+  <Box
+      sx={{
+        '& > legend': { mt: 2 },
+      }}
+    >
+  
+  <Card sx={{ maxWidth: 200 }}>
+      <CardActionArea>
+
+      <Link style={{textDecoration:'none'}} to={'/movieupdate'}>
+
+        <CardMedia
+          component="img"
+          height="200"
+          image={addimage}
+        
+        /></Link> 
+        <CardContent>
+          <Typography sx={{justifyContent:'center', display:'flex'}}   component="div">
+          ADD NEW
+          </Typography>
+      
+
+      
+        </CardContent>
+      </CardActionArea>
+    </Card>
+<br />
+  
+      {/* <Rating name="read-only" value={value} readOnly /> */}
+     
+    </Box>
+  </Box>
+
+  </Grid>
       {data.map((val, i) => (
         
   
@@ -56,11 +98,14 @@ const Admin = () => {
           <Typography variant="body2" color="text.secondary">
           Category :{val.catogary}<br />
           Language : {val.language} <br />
+          Rate of Ticket : {val.rate} <br />
+          No of Tickets : {val.nooftickets} <br />
+          
           </Typography>
 
 
           
-          <button className="editbtn"> <EditIcon/></button> &nbsp; &nbsp;<button className="deletebtn"><DeleteIcon/></button>
+          <button className="editbtn"> <EditIcon/></button>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<button className="deletebtn"><DeleteIcon/></button>
 
         </CardContent>
       </CardActionArea>
@@ -76,6 +121,10 @@ const Admin = () => {
 
  
 ))}
+
+
+
+
 
 </Grid>
      
