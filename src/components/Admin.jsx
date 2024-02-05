@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import EditIcon from "@mui/icons-material/Edit";
-import AddBoxIcon from "@mui/icons-material/AddBox";
 import DeleteIcon from "@mui/icons-material/Delete";
 import axios from "axios";
 import Headeradm from "./Headeradm";
@@ -111,13 +110,14 @@ const Admin = () => {
                         Rate of Ticket : {val.rate} <br />
                         No of Tickets : {val.nooftickets} <br />
                       </Typography>
+                      <Link  style={{color:'white'}} to={`/movieupdate/${val._id}`}>
                       <button className="editbtn">
-                        {" "}
-                        <Link  style={{color:'white'}} to={`/movieupdate/${val._id}`}>
+                 
+                      
                           <EditIcon />
-                        </Link>
-                      </button>{" "}
                   
+                      </button>
+                      </Link>
                       <button 
                         onClick={() => {
                           deleteMovie(val._id);
