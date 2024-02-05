@@ -113,13 +113,12 @@ const Admin = () => {
                       </Typography>
                       <button className="editbtn">
                         {" "}
-                        <Link to={`/${val._id}`}>
+                        <Link  style={{color:'white'}} to={`/movieupdate/${val._id}`}>
                           <EditIcon />
                         </Link>
                       </button>{" "}
-                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      &nbsp;&nbsp; &nbsp;
-                      <button
+                  
+                      <button 
                         onClick={() => {
                           deleteMovie(val._id);
                         }}

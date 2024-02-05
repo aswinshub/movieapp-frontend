@@ -23,7 +23,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/user" element={<User />} />
         <Route path="/movieupdate" element={<Adminform />} />
-    
+        <Route path="/movieupdate/:_id" element={<Adminform />} />
 
 <Route path="/page" element={<Moviepage />} />
 <Route path="/:_id" element={<Moviepage />} />
