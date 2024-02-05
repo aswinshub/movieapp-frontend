@@ -64,7 +64,7 @@ const Adminform = (props) => {
   label="Movie Name"
   name="movie"
   onChange={(e) => {
-    setForm({ ...form, movie: e.target.value });
+    setForm({ ...form, moviename: e.target.value });
   }}
 />
 <br />   <br />
